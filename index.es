@@ -5,12 +5,13 @@ const
     = stun.constants
 
 , server =
-    stun.createServer()
+    stun.createServer ()
 
 , request =
-    stun.createMessage(STUN_BINDING_REQUEST)
+    stun.createMessage
+      (STUN_BINDING_REQUEST)
 
-server.once('bindingResponse', stunMsg => {
+server.once ('bindingResponse', stunMsg => {
   console.log('your ip:', stunMsg.getAttribute(STUN_ATTR_XOR_MAPPED_ADDRESS).value.address)
 
   server.close()
