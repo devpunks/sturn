@@ -6,7 +6,7 @@
     "port": 8886,
     "/* secure */": "/* whether this connects via https */",
     "secure": false,
-    "key": null,
+    "key" : null,
     "cert": null,
     "password": null
   },
