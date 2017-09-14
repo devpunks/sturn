@@ -9,6 +9,8 @@
 
   <p>The WebRTC peer-to-peer communication happens between the user's browser and the node where the web session is started. If the node is on a public host with an external IP, the communication is established without problems. If the node is instead behind a NAT, a STUN/TURN server is necessary for negotiating NAT traversal when establishing peer-to-peer WebRTC communication.
 
+When a STUN/TURN server is used, usually STUN is attempted firstly. Depending on your own needs, it's also possible to use either a STUN server or a TURN server only. The main difference between these two solutions is that media will travel directly between both end points if STUN is used, whereas media will be proxied through the server if TURN is utilized. Note that, depending on network topology (i.e. combinations of NAT types, firewalls and network configurations) STUN may not work. Success rate is about 80%, but in case of failure of connectivity with STUN it's necessary to have a TURN server as fallback or it will be not possible to run NoMachine web sessions with WebRTC enabled.
+
   1. If  the system firewall is blocking all the outbound and inbound ports, the WebRTC connection cannot be established. A STUN/TURN server is necessary also in this case.</li>
 
   2. If the system firewall is blocking only inbound ports, the connection is possible only if the user's device is not behind a NAT and has a public IP.
