@@ -3,6 +3,9 @@ stun/turn server for WebRTC
 
   - How to change stun server - https://github.com/andyet/SimpleWebRTC/issues/134
 
+## Stun
+  - Wikipedia - https://en.wikipedia.org/wiki/STUN
+
 ### Testing
 
   <a href=chrome://webrtc-internals>chrome://webrtc-internals</a>
