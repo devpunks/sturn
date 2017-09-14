@@ -19,14 +19,7 @@
 
   - How to change stun server - https://github.com/andyet/SimpleWebRTC/issues/134
 
-## STUN _(Session Traversal Utilities for NAT)_
-  - STUN - https://en.wikipedia.org/wiki/STUN
-  - NAT _(Network Address Translation)_ - https://en.wikipedia.org/wiki/Network_address_translation
-
-## TURN _(Traversal Using Relays around NAT)_
-  - Wikipedia - https://en.wikipedia.org/wiki/TURN
-
-### Public Alternatives
+## Public Alternatives
   An alternative to set-up your own STUN/TURN server is to use any of the public NAT Traversal services available on the internet, for example this is a list of public STUN/TURN servers:
 
 ```
@@ -36,6 +29,13 @@ stun3.l.google.com:19302
 stun4.l.google.com:19302
 stun.stunprotocol.org:3478
 ```
+
+## STUN _(Session Traversal Utilities for NAT)_
+  - STUN - https://en.wikipedia.org/wiki/STUN
+  - NAT _(Network Address Translation)_ - https://en.wikipedia.org/wiki/Network_address_translation
+
+## TURN _(Traversal Using Relays around NAT)_
+  - Wikipedia - https://en.wikipedia.org/wiki/TURN
 
 ### Testing
 
