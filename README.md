@@ -48,7 +48,7 @@ stun.stunprotocol.org:3478
 
 ### STUND
   - https://github.com/ernado/stund
-  - https://godoc.org/github.com/ernado/stun#example-Message
+  - https://godoc.org/github.com/ernado/stun
 
 ### xirsys Configuration
   Signalmaster server https://github.com/andyet/signalmaster
