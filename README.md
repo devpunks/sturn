@@ -51,7 +51,7 @@ stun.stunprotocol.org:3478
 
 ### Testing
 
-  <a href=chrome://webrtc-internals>chrome://webrtc-internals</a>
+  chrome://webrtc-internals
 
 ## Servers
 
