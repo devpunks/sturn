@@ -1,0 +1,24 @@
+{
+  "name": "io.sturn",
+  "version": "0.1.0",
+  "description": "STUN/TURN server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sneakyhead/sturn.io.git"
+  },
+  "keywords": [
+    "webrtc",
+    "stun",
+    "turn"
+  ],
+  "author": "snuggs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sneakyhead/sturn.io/issues"
+  },
+  "homepage": "https://github.com/sneakyhead/sturn.io#readme"
+}
