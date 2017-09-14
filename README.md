@@ -48,6 +48,7 @@ stun.stunprotocol.org:3478
 
 ### STUND
   - https://github.com/ernado/stund
+  - https://github.com/ernado/stun
   - https://godoc.org/github.com/ernado/stun
 
 ### xirsys Configuration
