@@ -1,6 +1,8 @@
 # sturn.io
 stun/turn server for WebRTC
 
+A STUN/TURN server is needed when the node where the web session will be started is behind a NAT.
+
   - How to change stun server - https://github.com/andyet/SimpleWebRTC/issues/134
 
 ## STUN _(Session Traversal Utilities for NAT)_
