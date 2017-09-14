@@ -17,8 +17,6 @@
 
   4. If the system firewall is blocking only outbound ports, WebRTC connection will be possible given that the node is on a machine with a public IP not behind a NAT.  The NAT router will not block inbound connections and the user's device will be able to make connections with the server without problems.
 
-  </ol>
-
   - How to change stun server - https://github.com/andyet/SimpleWebRTC/issues/134
 
 ## STUN _(Session Traversal Utilities for NAT)_
