@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/sneakyhead/sturn.io/issues"
   },
-  "homepage": "https://github.com/sneakyhead/sturn.io#readme"
+  "homepage": "https://github.com/sneakyhead/sturn.io#readme",
+  "dependencies": {
+    "normalice": "^1.0.1"
+  }
 }
