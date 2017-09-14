@@ -42,6 +42,7 @@ stun.stunprotocol.org:3478
   - Wikipedia - https://en.wikipedia.org/wiki/TURN
   - RFC5766 - [TURN Relay Extensions to STUN](https://tools.ietf.org/html/rfc5766)
   - RFC6516 - [TURN Extension for IPv6](https://tools.ietf.org/html/rfc6156)
+  - RFC6062 - [TURN Extensions for TCP Allocations](https://tools.ietf.org/html/rfc6062)
 
 
 
