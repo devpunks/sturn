@@ -12,7 +12,7 @@
   },
   "rooms": {
     "/* maxClients */": "/* maximum number of clients per room. 0 = no limit */",
-    "maxClients": 0
+    "maxClients": 4
   },
   "stunservers": [
     {
