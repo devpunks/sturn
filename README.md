@@ -9,14 +9,13 @@
 
 </div>
 
-  <ol>
-    <li>If  the system firewall is blocking all the outbound and inbound ports, the WebRTC connection cannot be established. A STUN/TURN server is necessary also in this case.</li>
+  1. If  the system firewall is blocking all the outbound and inbound ports, the WebRTC connection cannot be established. A STUN/TURN server is necessary also in this case.</li>
 
-    <li>If the system firewall is blocking only inbound ports, the connection is possible only if the user's device is not behind a NAT and has a public IP.
+  2. If the system firewall is blocking only inbound ports, the connection is possible only if the user's device is not behind a NAT and has a public IP.
 
-    <li>If the user's device is behind a NAT instead, connection will not be made. Also in this case setting-up a STUN/TURN server will help.
+  3. If the user's device is behind a NAT instead, connection will not be made. Also in this case setting-up a STUN/TURN server will help.
 
-    <li>If the system firewall is blocking only outbound ports, WebRTC connection will be possible given that the node is on a machine with a public IP not behind a NAT.  The NAT router will not block inbound connections and the user's device will be able to make connections with the server without problems.
+  4. If the system firewall is blocking only outbound ports, WebRTC connection will be possible given that the node is on a machine with a public IP not behind a NAT.  The NAT router will not block inbound connections and the user's device will be able to make connections with the server without problems.
 
   </ol>
 
