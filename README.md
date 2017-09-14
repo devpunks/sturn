@@ -4,7 +4,8 @@ stun/turn server for WebRTC
   - How to change stun server - https://github.com/andyet/SimpleWebRTC/issues/134
 
 ### Testing
-  - [chrome://webrtc-internals](chrome://webrtc-internals)
+
+  <a href=chrome://webrtc-internals>chrome://webrtc-internals</a>
 
 ### xirsys Configuration
   Signalmaster server https://github.com/andyet/signalmaster
