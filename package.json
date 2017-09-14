@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/sneakyhead/sturn.io#readme",
   "dependencies": {
-    "normalice": "^1.0.1"
+    "normalice": "^1.0.1",
+    "stun": "^1.0.2"
   }
 }
