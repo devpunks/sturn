@@ -4,6 +4,8 @@
   <h3>STUN/TURN server for WebRTC</h3>
 
   <p>A STUN/TURN server is needed when the node where the web session will be started is behind a NAT.
+
+  <p>The WebRTC peer-to-peer communication happens between the user's browser and the node where the web session is started. If the node is on a public host with an external IP, the communication is established without problems. If the node is instead behind a NAT, a STUN/TURN server is necessary for negotiating NAT traversal when establishing peer-to-peer WebRTC communication.
 </div>
 
   - How to change stun server - https://github.com/andyet/SimpleWebRTC/issues/134
