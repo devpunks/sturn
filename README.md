@@ -1,7 +1,7 @@
 <div align=center>
   <h1>sturn.io</H1>
 
-  <h3><em>STUN/TURN server for WebRTC</em></h3>
+  <h3>STUN/TURN server for WebRTC</h3>
 
   <p>A STUN/TURN server is needed when the node where the web session will be started is behind a NAT.
 </div>
