@@ -10,7 +10,7 @@
 </div>
 
   <ol>
-    <li>If  the system firewall is blocking all the outbound and inbound ports, the WebRTC connection cannot be established. A STUN/TURN server is necessary also in this case.
+    <li>If  the system firewall is blocking all the outbound and inbound ports, the WebRTC connection cannot be established. A STUN/TURN server is necessary also in this case.</li>
 
     <li>If the system firewall is blocking only inbound ports, the connection is possible only if the user's device is not behind a NAT and has a public IP.
 
