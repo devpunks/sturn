@@ -34,7 +34,8 @@ stun.stunprotocol.org:3478
 
 ## STUN _(Session Traversal Utilities for NAT)_
   - STUN - https://en.wikipedia.org/wiki/STUN
-  - NAT _(Network Address Translation)_ - https://en.wikipedia.org/wiki/Network_address_translation
+  - RFC  - https://tools.ietf.org/html/rfc5389
+  - NAT  - _(Network Address Translation)_ - https://en.wikipedia.org/wiki/Network_address_translation
 
 ## TURN _(Traversal Using Relays around NAT)_
   - Wikipedia - https://en.wikipedia.org/wiki/TURN
