@@ -14,7 +14,8 @@ const
 server.once ('bindingResponse', stunMsg => {
   console.log('your ip:', stunMsg.getAttribute(STUN_ATTR_XOR_MAPPED_ADDRESS).value.address)
 
-  server.close()
+  console.log ('now running sturn.io STUN server')
+
 })
 
 server.send
