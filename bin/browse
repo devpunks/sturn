@@ -1,0 +1,6 @@
+# ; expecting PORT
+PORT="3000"
+
+PORT=$PORT npm run serve \
+& PORT=$PORT ./node_modules/.bin/browser-sync start \
+  --config=./browse.es
