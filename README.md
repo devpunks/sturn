@@ -73,15 +73,19 @@ stun.stunprotocol.org:3478
 
   chrome://webrtc-internals
 
+
 ## Servers
+
 
 ### STUND
   - https://github.com/ernado/stund
   - https://github.com/ernado/stun
   - https://godoc.org/github.com/ernado/stun
 
+
 ### stun-js
   - https://github.com/microminion/stun-js
+
 
 ### stun **
   - https://github.com/reklatsmasters/stun
@@ -93,4 +97,3 @@ _See [xirsys.json](xirsys.json) for more details_
 
 https://github.com/andyet/SimpleWebRTC/issues/134#issuecomment-260781148
   > @billyshena I can't speak to how xirsys will show you connections, but you should be able to use chrome://webrtc-internals to determine if you're able to gather candidates. Also note that because this is a mesh lib, you won't create peer connections with candidates until you have at least two people.
-
