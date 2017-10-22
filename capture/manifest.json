@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2
+, "version": "0.0.1"
+
+, "options_page": "options.html"
+, "background": {
+    "scripts": ["index.es"]
+  }
+
+, "name": "sturn"
+, "description": "Capture extension for sturn"
+
+, "content_scripts": [
+    {
+      "matches": ["*://localhost"],
+      "js": ["chrome.es"]
+    }
+  ]
+
+, "permissions":
+    [ "background", "storage", "*://localhost" ]
+
+, "browser_action": {
+    "default_title": "Sneakyhead.com Nike Store ATC",
+    "default_badge": "STURN",
+    "default_icon": "index.png",
+    "default_popup": "index.html"
+  }
+}
+
+
