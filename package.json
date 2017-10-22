@@ -1,26 +1,53 @@
 {
+  "private": true,
+  "license": "MIT",
   "name": "io.sturn",
+  "author": "snuggs",
   "version": "0.1.0",
   "description": "STUN/TURN server",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server.es",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakyhead/sturn.io.git"
   },
+
+  "homepage": "https://github.com/sneakyhead/sturn.io#readme",
+
   "keywords": [
     "webrtc",
     "stun",
     "turn"
   ],
-  "author": "snuggs",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sneakyhead/sturn.io/issues"
   },
-  "homepage": "https://github.com/sneakyhead/sturn.io#readme",
+
+  "scripts": {
+    "postinstall": "npm ln ../snuggsi && npm ln ../jsdom && npm ln ../buble-tape",
+
+    "start": "npm install && npm run templates && npm run styles && npm run scripts && npm run serve",
+
+    "watch": "npm run watch/templates & npm run watch/styles & npm run watch/scripts & npm run watch/browser & wait",
+    "watch/browser": "npm run serve & browser-sync start --index template.html --proxy 'http://localhost:8080' --files public",
+
+    "serve": "node server.es",
+
+    "watch/templates": "npm run templates -- --watch",
+    "test": "rollup --config rollup.spec.config.js --watch",
+    "templates": "pug $(find . -name '*.pug' -not -name '_*.pug' -not -path './node_modules/*' -not -path './**/_*.pug' -maxdepth 2) --out public",
+
+    "styles": "postcss --config style.es style.sss",
+    "watch/styles": "npm run styles -- --watch",
+
+    "scripts": "rollup --config rollup.config.js",
+    "watch/scripts": "npm run scripts -- --watch",
+
+    "ld+json": "cp broadcasts/*.ld.json public",
+
+    "bubletape": "bubletape"
+  },
+
   "dependencies": {
     "normalice": "^1.0.1",
     "stun": "^1.0.2"
