@@ -98,12 +98,6 @@ stun.stunprotocol.org:3478
   - Adaptive Streaming in the Field - http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Adaptive-Streaming-in-the-Field-73017.aspx
 
 
-### QUIC
-  - [QUIC IETF Draft](https://tools.ietf.org/html/draft-tsvwg-quic-protocol-00)
-  - [QUIC Wikipedia](https://en.wikipedia.org/wiki/QUIC)
-  - [QUIC GOOGLE](https://www.chromium.org/quic)
-
-
 ### Network Topology
 ![](https://github.com/sneakyhead/sturn.io/blob/master/images/stack.png)
 
