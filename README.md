@@ -100,8 +100,8 @@ stun.stunprotocol.org:3478
 
 ### RTMP (Flash)
 
-  - http://nginx-rtmp.blogspot.com
-  - Streaming with NGINX RTMP module
+  - Streaming with NGINX RTMP module - http://nginx-rtmp.blogspot.com
+
 
 ### Network Topology
 ![](https://github.com/sneakyhead/sturn.io/blob/master/images/stack.png)
