@@ -60,7 +60,12 @@ stun.stunprotocol.org:3478
   QUIC (Quick UDP Internet Connections, pronounced quick) is an experimental transport layer network protocol developed by Google. QUIC supports a set of multiplexed connections between two endpoints over User Datagram Protocol (UDP), and was designed to provide security protection equivalent to TLS/SSL, along with reduced connection and transport latency, and bandwidth estimation in each direction to avoid congestion. QUIC's main goal is to optimize connection-oriented web applications currently using TCP. An experimental implementation is being put in place in Chrome by a team of engineers at Google.
 
 
-## WebRTC vs. RTMP vs. HLS
+## H264 vs VP8 vs DASH vs. RTMP vs. HLS
+
+### Dash
+
+  - https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP
+
 
 ### HLS
 
