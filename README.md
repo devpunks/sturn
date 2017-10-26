@@ -101,6 +101,7 @@ stun.stunprotocol.org:3478
 ### RTMP (Flash)
 
   - Streaming with NGINX RTMP module - http://nginx-rtmp.blogspot.com
+  - http://nginx-rtmp.blogspot.com/2017/07/introducing-nginx-ts-module-for-hls-and.html
 
 
 ### Network Topology
