@@ -62,6 +62,8 @@ stun.stunprotocol.org:3478
 
 ## H264 vs VP8 vs DASH vs. RTMP vs. HLS
 
+  - Live Streaming Web Audio and Video https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Live_streaming_web_audio_and_video
+
 ### Dash
 
   Unlike HLS, HDS, and Smooth Streaming, DASH is codec-agnostic,
