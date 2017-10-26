@@ -62,6 +62,11 @@ stun.stunprotocol.org:3478
 
 ## WebRTC vs. RTMP vs. HLS
 
+### HLS
+
+  - What is HLS LIve Streaming? - https://gist.github.com/WebReflection/ed05681fe73ece4917de850c2c3bd7a1
+  - Adaptive Streaming in the Field - http://www.streamingmedia.com/Articles/Editorial/Featured-Articles/Adaptive-Streaming-in-the-Field-73017.aspx
+
 
 ### Further Reading
   - [QUIC IETF Draft](https://tools.ietf.org/html/draft-tsvwg-quic-protocol-00)
