@@ -64,6 +64,9 @@ stun.stunprotocol.org:3478
 
 ### Dash
 
+  Unlike HLS, HDS, and Smooth Streaming, DASH is codec-agnostic,
+  which means it can use content encoded with any coding format like H.265, H.264, VP9 etc.
+
   - https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP
 
 
