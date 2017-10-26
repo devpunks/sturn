@@ -56,6 +56,7 @@ stun.stunprotocol.org:3478
 ## Streaming
 
   - GStreamer - https://gstreamer.freedesktop.org/
+  - HTTP Live Streaming - https://en.wikipedia.org/wiki/HTTP_Live_Streaming
 
 
 ## QUIC vs VP8 vs H.264 vs WebM vs  DASH vs HLS vs RTMP
