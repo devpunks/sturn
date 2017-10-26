@@ -69,6 +69,8 @@ stun.stunprotocol.org:3478
 ### VP8
 
 
+### H.264
+
 
 ### WebM
 
