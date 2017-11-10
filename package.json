@@ -24,7 +24,7 @@
   },
 
   "scripts": {
-    "postinstall": "npm ln ../snuggsi && npm ln ../jsdom && npm ln ../buble-tape",
+    "postinstall": "",
 
     "start": "npm install && npm run templates && npm run styles && npm run scripts && npm run serve",
 
