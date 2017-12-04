@@ -6,6 +6,7 @@
   "version": "0.1.0",
   "description": "STUN/TURN server",
   "main": "server.es",
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakyhead/sturn.io.git"
