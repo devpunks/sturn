@@ -3,6 +3,7 @@
 
   <h3>STUN/TURN server for WebRTC</h3>
 
+  <p><a href=https://en.wikipedia.org/wiki/Secrecy_of_correspondence>Secrecy of Correspondence</a></p>
 </div>
 
 A STUN/TURN server is needed when the node where the web session will be started is behind a NAT.
