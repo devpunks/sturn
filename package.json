@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/sneakyhead/sturn.io.git"
   },
+
+  "main": "server.es",
+  "engines": { "node": "8.1.x" },
+
   "homepage": "https://github.com/sneakyhead/sturn.io#readme",
+
   "keywords": [
     "webrtc",
     "stun",
