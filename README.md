@@ -113,6 +113,9 @@ stun.stunprotocol.org:3478
 
 
 ### Network Topology
+
+SFU (Selective Forwarding Unit) - https://webrtcglossary.com/sfu/
+
 ![](https://github.com/sneakyhead/sturn.io/blob/master/images/stack.png)
 
 
