@@ -56,6 +56,7 @@ stun.stunprotocol.org:3478
 
 # Streaming
 
+  - Facebook broadcasting to millions live - https://code.facebook.com/posts/1653074404941839/under-the-hood-broadcasting-live-video-to-millions/
   - HTTP Media Streaming Comparison - https://en.wikipedia.org/wiki/Comparison_of_streaming_media_systems
   - HTTP Live Streaming - https://en.wikipedia.org/wiki/HTTP_Live_Streaming
   - GStreamer - https://gstreamer.freedesktop.org/
