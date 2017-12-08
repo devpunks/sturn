@@ -30,10 +30,10 @@
 
     "start": "npm install && npm run serve",
 
+    "serve": "node server.es",
+
     "watch": "npm run watch/templates & npm run watch/styles & npm run watch/scripts & npm run watch/browser & wait",
     "watch/browser": "npm run serve & browser-sync start --index template.html --proxy 'http://localhost:8080' --files public",
-
-    "serve": "node server.es",
 
     "watch/templates": "npm run templates -- --watch",
     "test": "rollup --config rollup.spec.config.js --watch",
