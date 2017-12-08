@@ -1,4 +1,6 @@
-import gum from '../media/gum.es'
+const
+  { gum }
+    = require ('../media/gum.es')
 
 const RTCPeerConnection = RTCPeerConnection || webkitRTCPeerConnection
 
@@ -14,7 +16,7 @@ let remotePeerConnection
 console.clear ()
 console.log ('From Operator')
 
-export default class Operator {
+module.exports = class Operator {
   constructor () {
     this.name = 'Shauna'
     console.log (`${this.name} your operator. How may I help?`)
