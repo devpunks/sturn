@@ -53,7 +53,7 @@
   "dependencies": {
     "@std/esm": "*",
     "stun": "^1.0.2",
-    "websockets": "*",
+    "websocket": "*",
     "normalice": "^1.0.1"
   },
 
