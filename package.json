@@ -1,18 +1,17 @@
 {
   "private": true,
   "license": "MIT",
-  "name": "io.sturn",
+  "name": "sturn.io",
   "author": "snuggs",
   "version": "0.1.0",
   "description": "STUN/TURN server",
-  "main": "server.es",
+  "main": "index.es",
 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakyhead/sturn.io.git"
   },
 
-  "main": "server.es",
   "engines": { "node": "8.1.x" },
 
   "homepage": "https://github.com/sneakyhead/sturn.io#readme",
@@ -29,7 +28,7 @@
   "scripts": {
     "postinstall": "",
 
-    "start": "npm install && npm run templates && npm run styles && npm run scripts && npm run serve",
+    "start": "npm install && npm run serve",
 
     "watch": "npm run watch/templates & npm run watch/styles & npm run watch/scripts & npm run watch/browser & wait",
     "watch/browser": "npm run serve & browser-sync start --index template.html --proxy 'http://localhost:8080' --files public",
@@ -63,24 +62,16 @@
     "browser-sync": "*",
 
     "posthtml": "*",
-    "posthtml-pug": "*",
     "posthtml-include": "*",
     "posthtml-sugarml": "*",
 
-    "pug": "^2.0.0-alpha7",
-    "pug-cli": "^1.0.0-alpha5",
+    "pug": "*",
+    "pug-cli": "*",
 
     "sugarss": "*",
     "postcss-cli": "*",
     "postcss-nested": "*",
     "postcss-easy-import": "*",
-    "postcss-discard-comments": "*",
-
-    "rollup": "*",
-    "rollem": "*",
-    "rollup-watch": "*",
-    "rollup-plugin-json": "*",
-    "rollup-plugin-buble": "*",
-    "rollup-plugin-multi-entry": "*"
+    "postcss-discard-comments": "*"
   }
 }
