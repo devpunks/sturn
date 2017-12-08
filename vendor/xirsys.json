@@ -1,0 +1,33 @@
+// https://github.com/andyet/SimpleWebRTC/issues/134
+{
+  "isDev": true,
+
+  "server": {
+    "port": 8886,
+    "key" : null,
+    "cert": null,
+    "secure": false,
+    "password": null,
+    "/* secure */": "/* whether this connects via https */"
+  },
+
+  "rooms": {
+    "/* maxClients */": "/* maximum number of clients per room. 0 = no limit */",
+    "maxClients": 4
+  },
+
+  "stunservers": [
+    {
+      "url": "stun:turn02.uswest.xirsys.com"
+    }
+  ],
+
+  "turnservers": [
+    {
+      "urls": ["turn:your_turn_server"],
+      "secret": "turnserversharedsecret",
+      "expiry": 86400
+    }
+  ]
+}
+
