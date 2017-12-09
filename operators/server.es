@@ -79,4 +79,3 @@ socket.on ('request', function (request) {
   connection.emit ('listing')
   console.log ('connect emit listing', channel)
 })
-
