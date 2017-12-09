@@ -38,6 +38,7 @@ void
   console.log ('Connection length', connections.length)
 })
 
+
 .on ('request', function (request) {
   console.log ('\n\n===========================\n', 'requested')
   // THIS WILL BLOW UP IF REQUESTED WITHOUT PROTOCOL
@@ -76,7 +77,7 @@ void
   console.log ('connect emit listing', channel)
 })
 
+
 server.listen (PORT, function () {
   console.log ('Server is listening on port', PORT)
 })
-
