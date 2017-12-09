@@ -7,23 +7,30 @@
   "description": "STUN/TURN server",
   "main": "index.es",
 
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakyhead/sturn.io.git"
   },
 
+
   "engines": { "node": "8.1.x" },
 
+
   "homepage": "https://github.com/sneakyhead/sturn.io#readme",
+
 
   "keywords": [
     "webrtc",
     "stun",
     "turn"
   ],
+
+
   "bugs": {
     "url": "https://github.com/sneakyhead/sturn.io/issues"
   },
+
 
   "scripts": {
     "postinstall": "",
@@ -43,10 +50,9 @@
     "scripts": "rollup --config rollup.config.js",
     "watch/scripts": "npm run scripts -- --watch",
 
-    "ld+json": "cp broadcasts/*.ld.json public",
-
-    "bubletape": "bubletape"
+    "ld+json": "cp broadcasts/*.ld.json public"
   },
+
 
   "dependencies": {
     "@std/esm": "*",
@@ -54,6 +60,7 @@
     "websocket": "*",
     "normalice": "^1.0.1"
   },
+
 
   "devDependencies": {
     "tape": "*",
