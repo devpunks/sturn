@@ -9,7 +9,7 @@ const
 module.exports = server => {
   return new websocket ({
     httpServer: server,
-    protocolVersion: 8,
+    protocolVersion: 8, // shouldn't this be 13
     origin: `http://localhost:${PORT}`,
     autoAcceptConnections: false
   })
