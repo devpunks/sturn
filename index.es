@@ -3,4 +3,4 @@ require.extensions ['.es']
 
 console.warn (require.extensions)
 
-require ('./operators/server.es')
+require ('./operators/server')
