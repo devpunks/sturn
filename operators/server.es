@@ -13,10 +13,10 @@ let
 void
 
 (new websocket ({
-    httpServer: server,
-    protocolVersion: 8,
-    origin: 'http://localhost:3000',
-    autoAcceptConnections: false
+  httpServer: server,
+  protocolVersion: 8,
+  origin: 'http://localhost:3000',
+  autoAcceptConnections: false
 }))
 
 .on ('connect', connection => {
