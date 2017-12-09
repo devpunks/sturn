@@ -67,7 +67,7 @@ void
     }
   })
 
-  connection.on ('close', function (connection) {
+  connection.on ('close', connection => {
     console.log ((new Date), 'Peer', connection, 'hung up.')
   })
 
