@@ -1,32 +1,28 @@
 let
   channel
-
-, http = require ('http')
-
 , connections = new Array
-
+, PORT = (process.env.PORT || 8181)
 , websocket = require ('websocket').server
 
-, server = http.createServer (function (request, response) {
-  console.log ('Received request for', request.url)
-  response.writeHead (404)
-  response.end ()
+
+, server = require ('http').createServer ((request, response) => {
+    console.log ('Received request for', request.url)
+
+    response.writeHead (404)
+    response.end ()
 })
 
-const PORT = (process.env.PORT || 8181)
 
-server.listen (PORT, function () {
-  console.log ('Server is listening on port', PORT)
-})
+void
 
-, socket = new websocket({
+(new websocket ({
     httpServer: server,
     protocolVersion: 8,
     origin: 'http://localhost:3000',
     autoAcceptConnections: false
-})
+}))
 
-socket.on ('connect', function (connection) {
+.on ('connect', function (connection) {
   console.log ('connected')
 
   connection.on ('listing', function () {
@@ -42,7 +38,7 @@ socket.on ('connect', function (connection) {
   console.log ('Connection length', connections.length)
 })
 
-socket.on ('request', function (request) {
+.on ('request', function (request) {
   console.log ('\n\n===========================\n', 'requested')
   // THIS WILL BLOW UP IF REQUESTED WITHOUT PROTOCOL
   // new WebSocket('ws:foo', undefined) will blow up the server
