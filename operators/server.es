@@ -75,3 +75,8 @@ void
   connection.emit ('listing')
   console.log ('connect emit listing', channel)
 })
+
+server.listen (PORT, function () {
+  console.log ('Server is listening on port', PORT)
+})
+
