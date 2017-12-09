@@ -2,7 +2,6 @@ let
   channel
 , connections = new Array
 , PORT = (process.env.PORT || 8181)
-, websocket = require ('websocket').server
 
 , server = require ('http').createServer ((request, response) => {
     console.log ('Received request for', request.url)

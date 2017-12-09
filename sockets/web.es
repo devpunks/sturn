@@ -1,0 +1,4 @@
+const
+  { server }
+    = require ('websocket')
+
