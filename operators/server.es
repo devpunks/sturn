@@ -23,7 +23,7 @@ void
 .on ('connect', connection => {
   console.log ('connected')
 
-  connection.on ('listing', function () {
+  connection.on ('listing', _ => {
     if (!channel) return
 
     console.log ('about to go down', channel)
