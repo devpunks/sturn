@@ -37,7 +37,7 @@ void
 })
 
 
-.on ('request', function (request) {
+.on ('request', request => {
   console.log ('\n\n===========================\n', 'requested')
   // THIS WILL BLOW UP IF REQUESTED WITHOUT PROTOCOL
   // new WebSocket('ws:foo', undefined) will blow up the server
