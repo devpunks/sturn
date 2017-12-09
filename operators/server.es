@@ -9,25 +9,14 @@ let
 
     response.writeHead (404)
     response.end ()
-})
-
-websocket (server)
-.on ('connect', connection => {
-  console.log ('connected')
-
-  connection.on ('listing', _ => {
-    if (!channel) return
-
-    console.log ('about to go down', channel)
-
-    connections.filter (c => c !== connection)
-      .forEach(c => c.sendUTF (JSON.stringify ({ channel })))
   })
 
-  connections.push (connection)
-  console.log ('Connection length', connections.length)
-})
+  .listen (PORT, _ => {
+    console.log ('Server is listening on port', PORT)
+  })
 
+
+websocket (server)
 
 .on ('request', request => {
   console.log ('\n\n===========================\n', 'requested')
@@ -65,9 +54,4 @@ websocket (server)
 
   connection.emit ('listing')
   console.log ('connect emit listing', channel)
-})
-
-
-server.listen (PORT, _ => {
-  console.log ('Server is listening on port', PORT)
 })
