@@ -76,6 +76,6 @@ void
 })
 
 
-server.listen (PORT, function () {
+server.listen (PORT, _ => {
   console.log ('Server is listening on port', PORT)
 })
