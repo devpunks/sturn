@@ -38,8 +38,8 @@ socket.on ('connect', function (connection) {
       .forEach(c => c.sendUTF (JSON.stringify ({ channel })))
   })
 
-connections.push (connection)
-console.log ('Connection length', connections.length)
+  connections.push (connection)
+  console.log ('Connection length', connections.length)
 })
 
 socket.on ('request', function (request) {
