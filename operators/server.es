@@ -47,7 +47,7 @@ void
   var connection = request.accept ('route-protocol', request.origin)
   console.log ('accepted')
 
-  connection.on ('provide', function (_channel) {
+  connection.on ('provide', _channel => {
     if (!_channel) return
 
     channel = _channel
