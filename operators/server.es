@@ -11,7 +11,6 @@ let
     response.end ()
 })
 
-
 void
 
 (new websocket ({
