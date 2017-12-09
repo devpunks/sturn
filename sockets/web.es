@@ -2,7 +2,6 @@ const
   { server }
     = require ('websocket')
 
-void
 
 module.exports = function (server) {
 
