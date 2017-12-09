@@ -11,10 +11,7 @@ let
     response.end ()
 })
 
-void
-
 websocket (server)
-
 .on ('connect', connection => {
   console.log ('connected')
 
