@@ -2,6 +2,7 @@ let
   channel
 , connections = new Array
 , PORT = (process.env.PORT || 8181)
+, websocket = require ('../sockets/web')
 
 , server = require ('http').createServer ((request, response) => {
     console.log ('Received request for', request.url)
@@ -12,12 +13,7 @@ let
 
 void
 
-(new websocket ({
-  httpServer: server,
-  protocolVersion: 8,
-  origin: 'http://localhost:3000',
-  autoAcceptConnections: false
-}))
+websocket (server)
 
 .on ('connect', connection => {
   console.log ('connected')

@@ -4,9 +4,11 @@ const
 
 void
 
-(new websocket ({
-  httpServer: server,
-  protocolVersion: 8,
-  origin: 'http://localhost:3000',
-  autoAcceptConnections: false
-}))
+module.exports = function (server) {
+  return new server ({
+    httpServer: server,
+    protocolVersion: 8,
+    origin: 'http://localhost:3000',
+    autoAcceptConnections: false
+  })
+}
