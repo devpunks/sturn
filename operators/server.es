@@ -57,7 +57,7 @@ void
     console.log ('provide emit listing', channel)
   })
 
-  connection.on ('message', function (message) {
+  connection.on ('message', message => {
     message = JSON.parse (message.utf8Data)
 
     console.log ('\nmessage from: ', message)
