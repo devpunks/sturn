@@ -20,7 +20,7 @@ void
     autoAcceptConnections: false
 }))
 
-.on ('connect', function (connection) {
+.on ('connect', connection => {
   console.log ('connected')
 
   connection.on ('listing', function () {
