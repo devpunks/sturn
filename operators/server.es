@@ -1,19 +1,8 @@
 let
   channel
 , connections = new Array
-, PORT = (process.env.PORT || 8181)
-, websocket = require ('../sockets/web')
-
-, server = require ('http').createServer ((request, response) => {
-    console.log ('Received request for', request.url)
-
-    response.writeHead (404)
-    response.end ()
-  })
-
-  .listen (PORT, _ => {
-    console.log ('Server is listening on port', PORT)
-  })
+, server      = require ('../server')
+, websocket   = require ('../sockets/web')
 
 
 websocket (server)

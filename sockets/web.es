@@ -1,14 +1,21 @@
-module.exports = server => {
-  let websocket = require ('websocket').server
+const
+  { server: websocket }
+    = require ('websocket')
 
+, { PORT = 8181 }
+     = process.env
+
+
+module.exports = server => {
   return new websocket ({
     httpServer: server,
     protocolVersion: 8,
-    origin: 'http://localhost:3000',
+    origin: `http://localhost:${PORT}`,
     autoAcceptConnections: false
   })
 
-  .on ('connect', connection => {
+  .on (`connect`, connection => {
+
     console.log ('connected')
 
     connection.on ('listing', _ => {
