@@ -1,10 +1,10 @@
-module.exports = function (server) {
-  console.warn ('Server', server)
+module.exports = server => {
+  let websocket = require ('websocket').server
 
-//return new require ('websocket').server ({
-//  httpServer: server,
-//  protocolVersion: 8,
-//  origin: 'http://localhost:3000',
-//  autoAcceptConnections: false
-//})
+  return new websocket ({
+    httpServer: server,
+    protocolVersion: 8,
+    origin: 'http://localhost:3000',
+    autoAcceptConnections: false
+  })
 }
