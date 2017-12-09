@@ -5,6 +5,7 @@ const
 void
 
 module.exports = function (server) {
+
   return new server ({
     httpServer: server,
     protocolVersion: 8,
