@@ -6,73 +6,50 @@
   "version": "0.1.0",
   "description": "STUN/TURN server",
   "main": "index.es",
-
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sneakyhead/sturn.io.git"
   },
-
-
-  "engines": { "node": "8.1.x" },
-
-
+  "engines": {
+    "node": "8.1.x"
+  },
   "homepage": "https://github.com/sneakyhead/sturn.io#readme",
-
-
   "keywords": [
     "webrtc",
     "stun",
     "turn"
   ],
-
-
   "bugs": {
     "url": "https://github.com/sneakyhead/sturn.io/issues"
   },
-
-
   "scripts": {
     "postinstall": "",
-
     "start": "npm install && node .",
-
     "watch": "npm run watch/templates & npm run watch/styles & npm run watch/scripts & npm run watch/browser & wait",
     "watch/browser": "npm run serve & browser-sync start --index template.html --proxy 'http://localhost:8080' --files public",
-
     "watch/templates": "npm run templates -- --watch",
     "test": "rollup --config rollup.spec.config.js --watch",
     "templates": "pug $(find . -name '*.pug' -not -name '_*.pug' -not -path './node_modules/*' -not -path './**/_*.pug' -maxdepth 2) --out public",
-
     "styles": "postcss --config style.es style.sss",
     "watch/styles": "npm run styles -- --watch",
-
     "scripts": "rollup --config rollup.config.js",
     "watch/scripts": "npm run scripts -- --watch",
-
     "ld+json": "cp broadcasts/*.ld.json public"
   },
-
-
   "dependencies": {
     "@std/esm": "*",
     "stun": "^1.0.2",
     "websocket": "*",
     "normalice": "^1.0.1"
   },
-
-
   "devDependencies": {
     "tape": "*",
     "browser-sync": "*",
-
     "posthtml": "*",
     "posthtml-include": "*",
     "posthtml-sugarml": "*",
-
     "pug": "*",
     "pug-cli": "*",
-
     "sugarss": "*",
     "postcss-cli": "*",
     "postcss-nested": "*",
