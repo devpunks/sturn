@@ -5,6 +5,7 @@ let
 
 
 module.exports = server =>
+
   websocket (server)
     .on ('request', onrequest)
 
@@ -18,6 +19,7 @@ function onrequest (request) {
   // https://github.com/theturtle32/WebSocket-Node/blob/c46448810ace50237b7a97eebb3ec6c0d31cf118/docs/WebSocketRequest.md
 //var connection = request.accept ('route-protocol', request.origin)
 //console.log ('accepted')
+  console.warn ('accept', request.accept)
 
 //connection.on ('provide', _channel => {
 //  if (!_channel) return
