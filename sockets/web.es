@@ -1,5 +1,5 @@
 const
-  { server: websocket }
+  { server: Websocket }
     = require ('websocket')
 
 , { PORT = 8181 }
