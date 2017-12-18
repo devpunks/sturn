@@ -1,79 +1,9 @@
 #!/usr/bin/env bash
 
-export DOMAIN=sneakyhead
+export DOMAIN=sturn
 export PROFILE=$DOMAIN
 export APPLICATION=www
 export BUCKET="s3://$DOMAIN.com/"
 
 # Configure AWS profile
 echo "Configuring profile: $PROFILE"
-aws configure --profile $PROFILE
-
-# Check CNAME availability
-#aws elasticbeanstalk check-dns-availability --cname-prefix payphone --profile sneakyhead
-
-# Create bucket
-aws --profile $PROFILE s3 mb $BUCKET
-
-# Setup website
-aws s3 website --profile $PROFILE $BUCKET \
-  --index-document index.html \
-  --error-document error.html
-
-# List buckets
-echo "Listing buckets: $BUCKET"
-aws --profile $PROFILE s3 ls
-aws --profile $PROFILE s3 ls $BUCKET
-
-# Deploy static files
-# http://docs.aws.amazon.com/cli/latest/reference/s3/cp.html
-# aws s3 --profile $PROFILE cp public/index.html $BUCKET \
-# --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers full=emailaddress=user@example.com
-
-echo "Synchronizing BUCKET: $BUCKET"
-aws s3 --profile sneakyhead sync ./public "$BUCKET" \
-  --delete
-# --acl (string) Sets the ACL for the object when the command is performed. If you use this parameter you must have the "s3:PutObjectAcl" permission included in the list of actions for your IAM policy. Only accepts values of private, public-read, public-read-write, authenticated-read, aws-exec-read, bucket-owner-read, bucket-owner-full-control and log-delivery-write. See Canned ACL for details
-# --acl public-read
-
-# PUT bucket policy
-# Policy generator http://awspolicygen.s3.amazonaws.com/policygen.html
-# Examples: http://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html
-# Policy Keys: http://docs.aws.amazon.com/AmazonS3/latest/dev/amazon-s3-policy-keys.html
-export POLICY=file://policy.s3.json
-echo "putting Policy: $POLICY"
-aws s3api put-bucket-policy \
-  --profile $PROFILE \
-  --bucket $DOMAIN.com \
-  --policy $POLICY
-
-# Initialize Elastic Beanstalk
-#eb init payphone --profile sneakyhead
-#--modules payphone \
-#--platform node.js \
-#--region us-east-1 \
-#--keyname sneakyhead \
-#--profile sneakyhead
-#aws elasticbeanstalk create-application --application-name payphone --description "Payphone application" --profile sneakyhead
-
-# Configure environments
-# eb config payphone
-# eb config save payphone --cfg payphone
-#aws elasticbeanstalk create-configuration-template --profile sneakyhead --application-name payphone --template-name payphone --solution-stack-name "64bit Amazon Linux 2016.03 v2.1.3 running Node.js"
-
-# Create environments
-# eb create --modules payphone --env-group-suffix sneakyhead-group
-#aws elasticbeanstalk create-environment --profile sneakyhead --template-name payphone --application-name payphone --environment-name payphone --cname-prefix payphone --description "Sneakyhead WebRTC Signaling Server"
-
-# Deploy root to S3
-
-# Post results
-# aws ec2 describe-volumes --profile sneakyhead
-#aws deploy list-applications --profile sneakyhead
-#aws elasticbeanstalk describe-applications --profile sneakyhead
-
-# status
-# eb status payphone
-# eb health payphone
-# eb open payphone # opens browser
-
