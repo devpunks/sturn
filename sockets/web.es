@@ -7,7 +7,7 @@ const
 
 
 module.exports = server => {
-  return new websocket ({
+  return new Websocket ({
     httpServer: server,
     protocolVersion: 8, // shouldn't this be 13
     origin: `http://localhost:${PORT}`,
