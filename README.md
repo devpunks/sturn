@@ -44,14 +44,6 @@ stun.stunprotocol.org:3478
   - RFC6062 - [TURN Extensions for TCP Allocations](https://tools.ietf.org/html/rfc6062)
 
 
-
-## ICE _(Interactive Connectivity Establishment)_
-  - ICE - _([RFC5245](https://tools.ietf.org/html/rfc5245#section-15.1))_
-  - ICE Format - https://tools.ietf.org/html/rfc5245#section-15.1
-  0 ICE IP Address Handling - https://tools.ietf.org/html/draft-ietf-rtcweb-ip-handling-01
-  - Wikipedia - https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment
-  - icebreaker - https://github.com/elbecita/ice-breaker
-
 # Streaming
 
   - HTTP Live Streaming - https://en.wikipedia.org/wiki/HTTP_Live_Streaming
