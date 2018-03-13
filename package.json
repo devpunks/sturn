@@ -38,9 +38,10 @@
   },
   "dependencies": {
     "@std/esm": "*",
+    "node-media-server": "^1.2.1",
+    "normalice": "^1.0.1",
     "stun": "^1.0.2",
-    "websocket": "*",
-    "normalice": "^1.0.1"
+    "websocket": "*"
   },
   "devDependencies": {
     "tape": "*",
