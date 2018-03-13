@@ -91,8 +91,7 @@ http://stackoverflow.com/questions/21921790/best-approach-to-real-time-http-stre
 What is WebRTC
 http://blog.salemove.com/webrtc-vs-flash-not-much-of-a-competition/
 
-## LINKS
-https://github.com/webrtc
+### LINKS https://github.com/webrtc
 
 Architecture
 ![](http://webrtc-security.github.io/images/diagram_2_en.png)
