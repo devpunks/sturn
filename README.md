@@ -47,6 +47,7 @@ stun.stunprotocol.org:3478
 ## Platform
 
   - https://streamlabs.com
+  - https://forum.livepeer.org/t/faq-how-does-livepeer-prevent-self-dealing-transcoders/154
 
 ### Network Topology
 
