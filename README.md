@@ -96,7 +96,6 @@ http://blog.salemove.com/webrtc-vs-flash-not-much-of-a-competition/
 Architecture
 ![](http://webrtc-security.github.io/images/diagram_2_en.png)
 https://www.w3.org/TR/media-source/
-
 https://www.w3.org/TR/webrtc/
 
 https://developer.mozilla.org/en-US/docs/Web/API/MediaSource
