@@ -97,7 +97,6 @@ Architecture
 ![](http://webrtc-security.github.io/images/diagram_2_en.png)
 https://www.w3.org/TR/media-source/
 https://www.w3.org/TR/webrtc/
-
 https://developer.mozilla.org/en-US/docs/Web/API/MediaSource
 
 https://developers.google.com/web/updates/2011/11/Stream-video-using-the-MediaSource-API?hl=en
