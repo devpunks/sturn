@@ -87,6 +87,7 @@ _See [xirsys.json](xirsys.json) for more details_
 https://github.com/andyet/SimpleWebRTC/issues/134#issuecomment-260781148
   > @billyshena I can't speak to how xirsys will show you connections, but you should be able to use chrome://webrtc-internals to determine if you're able to gather candidates. Also note that because this is a mesh lib, you won't create peer connections with candidates until you have at least two people.
 
+
 ## Media encodings by browser
 http://stackoverflow.com/questions/21921790/best-approach-to-real-time-http-streaming-to-html5-video-client
 
