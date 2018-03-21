@@ -89,6 +89,7 @@ https://github.com/andyet/SimpleWebRTC/issues/134#issuecomment-260781148
 
 
 ## Media encodings by browser
+
 http://stackoverflow.com/questions/21921790/best-approach-to-real-time-http-streaming-to-html5-video-client
 
 ## WebRTC
