@@ -1,4 +1,4 @@
 require.extensions ['.es']
   = require.extensions ['.js']
 
-require ('./operator') ()
+require ('./operator') ( require ('./server') )
