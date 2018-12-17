@@ -16,11 +16,14 @@ pc.setRemoteDescription(offer)
 
     const sender = pc.getSenders()[1]
 
-    return sender.setParameters({encodings: [
-      {rid: "hi", maxBitrate: 2500000},
-      {rid: "mid", maxBitrate: 700000, scaleResolutionDownBy: 2},
-      {rid: "lo", maxBitrate: 150000, scaleResolutionDownBy: 4}
-    ]})
+    return sender.setParameters(
+      { encodings: [
+          { rid: "hi", maxBitrate: 2500000 },
+          { rid: "mid", maxBitrate: 700000, scaleResolutionDownBy: 2 },
+          { rid: "lo", maxBitrate: 150000, scaleResolutionDownBy: 4 }
+        ]
+      }
+    )
   })
 
   .then( _ => pc.createAnswer())
