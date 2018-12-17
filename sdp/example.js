@@ -1,7 +1,8 @@
 const
   offer = {
     "type": "offer",
-    "node": "simulcast"
+    "node": "simulcast",
+    "sdp" : "v=0 ..."
   }
 
 const pc = new RTCPeerConnection();
