@@ -6,6 +6,7 @@ const
   }
 
 const pc = new RTCPeerConnection();
+
 pc.setRemoteDescription(offer)
   .then(() => navigator.mediaDevices.getUserMedia({video: true}))
   .then((stream) => {
