@@ -8,8 +8,8 @@ const
 const pc = new RTCPeerConnection()
 
 pc.setRemoteDescription(offer)
-  .then(() => navigator.mediaDevices.getUserMedia({video: true}))
-  .then((stream) => {
+  .then( _ => navigator.mediaDevices.getUserMedia({video: true}))
+  .then(stream => {
     pc.addTrack(stream.getVideoTracks()[0], stream);
     const sender = pc.getSenders()[1];
     return sender.setParameters({encodings: [
