@@ -5,7 +5,7 @@ const
     "sdp" : "v=0 ..."
   }
 
-const pc = new RTCPeerConnection();
+const pc = new RTCPeerConnection()
 
 pc.setRemoteDescription(offer)
   .then(() => navigator.mediaDevices.getUserMedia({video: true}))
@@ -24,4 +24,4 @@ pc.setRemoteDescription(offer)
     const rid_lines = answer.sdp.split('\r\n')
        .filter(line => line.match('^a=rid'));
     console.log('rid lines', rid_lines);
-  });
+  })
