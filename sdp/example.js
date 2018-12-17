@@ -18,8 +18,8 @@ pc.setRemoteDescription(offer)
       {rid: "lo", maxBitrate: 150000, scaleResolutionDownBy: 4}
     ]});
   })
-  .then(() => pc.createAnswer())
-  .then((answer) => {
+  .then( _ => pc.createAnswer())
+  .then(answer => {
     console.log(answer.sdp);
     const rid_lines = answer.sdp.split('\r\n')
        .filter(line => line.match('^a=rid'));
