@@ -1,7 +1,8 @@
-const offer = {
-  "type": "offer",
-  "node": "simulcast"
-}
+const
+  offer = {
+    "type": "offer",
+    "node": "simulcast"
+  }
 
 const pc = new RTCPeerConnection();
 pc.setRemoteDescription(offer)
