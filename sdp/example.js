@@ -5,16 +5,18 @@ const
     "sdp" : "v=0 ..."
   }
 
-const pc = new RTCPeerConnection()
+const
+  pc = new RTCPeerConnection()
 
-pc.setRemoteDescription(offer)
+pc.setRemoteDescription (offer)
 
-  .then( _ => navigator.mediaDevices.getUserMedia({video: true}))
+  .then( _ => navigator.mediaDevices.getUserMedia ({ video: true }) )
 
   .then(stream => {
-    pc.addTrack(stream.getVideoTracks()[0], stream)
+    pc.addTrack (stream.getVideoTracks ()[0], stream)
 
-    const sender = pc.getSenders()[1]
+    const
+      sender = pc.getSenders ()[1]
 
     return sender.setParameters(
       { encodings: [
