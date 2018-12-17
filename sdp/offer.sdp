@@ -12,4 +12,3 @@ a=ice-ufrag:tCjVOmVGpVZjCem/
 a=ice-pwd:dOU77RWjJ8qQNb5OTz6D+U7h
 a=fingerprint:sha-256 C2:AE:C3:9B:C2:BE:7E:C2:9B:17:45:C2:A7:C2:A5:54:40:C2:A8:66:19:11:5C:C3:B2:34:C3:88:0A:C2:B9:C2:85:32:70:09:2E:C2:A9:C2:91:C2:A2:C2:82:C3:A8:71
 a=candidate:0 1 udp 1 0.0.0.0  typ host
-
