@@ -1,9 +1,3 @@
 #!/usr/bin/env bash
 
-export DOMAIN=sturn
-export PROFILE=$DOMAIN
-export APPLICATION=www
-export BUCKET="s3://$DOMAIN.com/"
-
-# Configure AWS profile
-echo "Configuring profile: $PROFILE"
+# Deploy scripts
