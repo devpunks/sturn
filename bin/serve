@@ -2,4 +2,6 @@
 
 echo "The port is $PORT"
 
+declare PORT=${PORT:-8080}
+
 go run index.go
