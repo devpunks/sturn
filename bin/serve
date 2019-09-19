@@ -2,4 +2,4 @@
 
 echo "The port is $PORT"
 
-node .
+go run index.go
