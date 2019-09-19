@@ -1,5 +1,5 @@
 <div align=center>
-  <h1>sturn.io</H1>
+  <h1>sturn</H1>
 
   <h3>STUN/TURN server for WebRTC</h3>
 
